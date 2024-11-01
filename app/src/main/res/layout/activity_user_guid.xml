@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserGuid">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="50dp"
+                >
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="40dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="Love Calculator"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="90dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:text="1.Data Collection  Usage\n
+This Application collects user information, including device type, location, IP address, and usage behavior, as specified in our Privacy Policy. These data points help provide a personalized and efficient user experience, enabling features such as location-based recommendations.
+\n\n Location Services:\nPurpose: Location data helps tailor app features based on approximate geographical location.
+Data Privacy: All location information shared with third-party services is aggregated and anonymized to protect user privacy.
+Third-Party Data Handling:\n\nThe Application may share anonymized data with trusted third-party services, as outlined in the Privacy Policy, to improve app functionality. Please review the Privacy Policies of our third-party providers, such as Google Play Services, for further details on data handling.\n\n
+ User Responsibilities:\n\nAcceptable Use: Users must use the Application for entertainment purposes only and refrain from any activities that could harm the Application's integrity.
+Opt-Out Options: To halt all data collection, users can uninstall the Application via standard device processes.\n\n
+Safety Measures:\n\nThe Service Provider implements security protocols to protect user information. Users are encouraged to keep the app updated to benefit from ongoing security enhancements.\n\n
+ Age Requirement:\n\nThe Application is not intended for children under the age of 13. Parents or guardians aware of any underage use are encouraged to reach out for prompt data deletion.\n\n
+Updates and Changes:\n\nOur Privacy Policy and User Guide may be updated periodically. Continued use of the Application signifies consent to these changes.\n\n
+For further assistance or to report any issues, please contact us at ranaislam97936@gmail.com "
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>
