@@ -58,15 +58,23 @@ public class Splish_Screen extends AppCompatActivity {
                 String url = "https://sites.google.com/view/lovecheckeronlineapps?usp=sharing";
 
                 // Create an Intent with ACTION_VIEW to open the URL
-                Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(url));
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
 
-                // Check if there is an app that can handle this intent
+                // Specify Google Chrome package name
+                intent.setPackage("com.android.chrome");
+
+                // Check if Chrome is installed and can handle this intent
                 if (intent.resolveActivity(getPackageManager()) != null) {
                     startActivity(intent);
+                } else {
+                    // If Chrome is not installed, fallback to default browser
+                    Intent fallbackIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                    startActivity(fallbackIntent);
                 }
             }
         });
+
+
         guidL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
